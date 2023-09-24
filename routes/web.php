@@ -27,3 +27,4 @@ Route::view('/contact', 'contact');
 
 
 Route::post('/contact.store', [ContactController::class, 'store']);
+

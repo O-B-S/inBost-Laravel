@@ -13,7 +13,7 @@ class ContactController extends Controller
     }
     // Store Contact Form data
     public function store(Request $request) {
-        // Form validation
+                // Form validation
         $this->validate($request, [
             'name' => 'required|min:2',
             'forename' => 'required|min:3',

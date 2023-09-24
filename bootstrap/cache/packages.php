@@ -1,4 +1,15 @@
 <?php return array (
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
@@ -18,6 +29,28 @@
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'larswolters98/laravel-recaptcha-v3' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Larswolters98\\LaravelRecaptchaV3\\RecaptchaServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Recaptcha' => 'Larswolters98\\LaravelRecaptchaV3\\Facades\\Recaptcha',
+    ),
+  ),
+  'mews/captcha' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mews\\Captcha\\CaptchaServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Captcha' => 'Mews\\Captcha\\Facades\\Captcha',
     ),
   ),
   'nesbot/carbon' => 
