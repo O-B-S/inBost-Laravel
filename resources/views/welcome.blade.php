@@ -149,7 +149,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
             <div class="portfolio-wrap">
               <a href="realisation-single.php">
-                <img src="assets/img/rea3.webp" class="img-fluid" alt="">
+                <img src="{{asset('img/rea3.webp')}}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Projet 2</h4>
                   <p>Code</p>
@@ -162,7 +162,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 380px; top: 0px;">
             <div class="portfolio-wrap">
               <a href="realisation-single.php">
-                <img src="assets/img/rea6.webp" class="img-fluid" alt="">
+                <img src="{{asset('img/rea6.webp')}}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Projet 3</h4>
                   <p>Data Science</p>
@@ -175,7 +175,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 760px; top: 0px;">
             <div class="portfolio-wrap">
               <a href="realisation-single.php">
-                <img src="assets/img/rea8.webp" class="img-fluid" alt="">
+                <img src="{{asset('img/rea8.webp')}}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Projet 4</h4>
                   <p>Marketing Digital</p>
@@ -188,7 +188,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 261.328px;">
             <div class="portfolio-wrap">
               <a href="realisation-single.php">
-                <img src="assets/img/rea5.webp" class="img-fluid" alt="">
+                <img src="{{asset('img/rea5.webp')}}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Projet 5</h4>
                   <p>Reseau</p>
@@ -201,7 +201,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 380px; top: 261.328px;">
             <div class="portfolio-wrap">
               <a href="realisation-single.php">
-                <img src="assets/img/rea7.jpg" class="img-fluid" alt="">
+                <img src="{{asset('img/rea7.jpg')}}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Projet 1</h4>
                   <p>Marketing digital</p>
@@ -214,7 +214,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 760px; top: 261.328px;">
             <div class="portfolio-wrap">
               <a href="realisation-single.php">
-                <img src="assets/img/rea1.jpg" class="img-fluid" alt="">
+                <img src="{{asset('img/rea1.jpg')}}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Projet 6</h4>
                   <p>IA</p>
