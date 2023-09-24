@@ -39,14 +39,14 @@
                         <li><a class="nav-link scrollto " href="/about">À Propos</a></li>
                         <li class="dropdown"><a href="#" class=""><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                                <li><a href="/service-code.php">Code</a></li>
-                                <li><a href="/service-code.php">Data Science</a></li>
-                                <li><a href="/service-code.php">Intelligence Artificielle</a></li>
-                                <li><a href="/service-code.php">Martketing Digital</a></li>
-                                <li><a href="/service-code.php">Réseau</a></li>
+                                <li><a href="/code">Code</a></li>
+                                <li><a href="/data-science">Data Science</a></li>
+                                <li><a href="/IA">Intelligence Artificielle</a></li>
+                                <li><a href="/digital-marketing">Marketing Digital</a></li>
+                                <li><a href="/network">Réseau</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link scrollto " href="/realisation">Réalisations</a></li>
+                        <li><a class="nav-link scrollto " href="/realisations">Réalisations</a></li>
                         <li><a class="nav-link scrollto " href="/blog">Blog</a></li>
                         <li><a class="nav-link scrollto " href="/contact">Contact</a></li>
                         <!-- <li><a class="getstarted scrollto" href="">Prendre rendez-vous</a></li> -->

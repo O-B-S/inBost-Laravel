@@ -15,3 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 Route::view('/about', 'about');
+Route::view('/code', 'code');
+Route::view('/data-science', 'data-science');
+Route::view('/IA', 'IA');
+Route::view('/digital-marketing', 'digital-marketing');
+Route::view('/network', 'network');
+Route::view('/realisations', 'realisations');
+
