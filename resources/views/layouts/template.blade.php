@@ -36,7 +36,7 @@
                 <nav id="navbar" class="navbar"> 
                     <ul>
                         <li><a class="nav-link scrollto active" href="/">Accueil</a></li>
-                        <li><a class="nav-link scrollto " href="/about">A Propos</a></li>
+                        <li><a class="nav-link scrollto " href="/about">À Propos</a></li>
                         <li class="dropdown"><a href="#" class=""><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li><a href="/service-code.php">Code</a></li>
