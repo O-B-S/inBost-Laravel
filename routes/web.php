@@ -21,4 +21,7 @@ Route::view('/IA', 'IA');
 Route::view('/digital-marketing', 'digital-marketing');
 Route::view('/network', 'network');
 Route::view('/realisations', 'realisations');
+Route::view('/blog', 'blog');
+Route::view('/contact', 'contact');
 
+Route::post('contact', [ParticipantsController::class, 'store']);

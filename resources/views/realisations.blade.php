@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('title', 'InBost - Réalisations')
+@section('title', 'InBost - Nos Réalisations')
 
 @section('content')
 <main id="main">
