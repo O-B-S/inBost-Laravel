@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,5 @@ Route::view('/realisations', 'realisations');
 Route::view('/blog', 'blog');
 Route::view('/contact', 'contact');
 
-Route::post('contact', [ParticipantsController::class, 'store']);
+
+Route::post('/contact.store', [ContactController::class, 'store']);
