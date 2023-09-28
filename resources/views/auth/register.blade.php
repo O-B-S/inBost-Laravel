@@ -1,11 +1,19 @@
-@extends('layouts.app')
+@extends('layouts.template')
+@section('title', 'InBost - Register')
 
 @section('content')
+<main id="main">
+    <!-- ======= jumbotron ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h2>Inscription</h2>
+        </div>
+    </section>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 mt-5">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">Inscrivez-vous</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -74,4 +82,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection

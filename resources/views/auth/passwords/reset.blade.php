@@ -1,6 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.template')
+@section('title', 'InBost - password reset ')
 
 @section('content')
+<main id="main">
+    <!-- ======= jumbotron ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h2>Inscription</h2>
+        </div>
+    </section>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -62,4 +70,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection

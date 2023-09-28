@@ -1,13 +1,30 @@
-@extends('layouts.app')
+@extends('layouts.template')
+@section('title', 'InBost - Login')
 
 @section('content')
+<main id="main">
+    <!-- ======= jumbotron ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h2>Connexion</h2>
+        </div>
+    </section>
 <div class="container">
+
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 mt-5"> 
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">Connectez-vous</div>
 
                 <div class="card-body">
+                    @if(Session::has('message'))
+                      <div class="alert alert-success">
+                        {{ Session::get('message') }}
+                        @php
+                        Session::forget('message');
+                        @endphp
+                       </div>
+                    @endif
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -70,4 +87,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection
