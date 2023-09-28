@@ -31,15 +31,11 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
-  'larswolters98/laravel-recaptcha-v3' => 
+  'laravel/ui' => 
   array (
     'providers' => 
     array (
-      0 => 'Larswolters98\\LaravelRecaptchaV3\\RecaptchaServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Recaptcha' => 'Larswolters98\\LaravelRecaptchaV3\\Facades\\Recaptcha',
+      0 => 'Laravel\\Ui\\UiServiceProvider',
     ),
   ),
   'mews/captcha' => 
