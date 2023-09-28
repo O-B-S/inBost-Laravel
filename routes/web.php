@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,11 @@ Route::post('/contact.store', [ContactController::class, 'store']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware' => ['auth','isAdmin']], function () {
+
+    Route::get('/dashboard', function () {
+       return view('admin.dashboard');
+    });
+ 
+ });
