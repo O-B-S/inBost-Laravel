@@ -35,8 +35,8 @@
         
                 <nav id="navbar" class="navbar"> 
                     <ul>
-                        <li><a class="nav-link scrollto active" href="/">Accueil</a></li>
-                        <li><a class="nav-link scrollto " href="/about">À Propos</a></li>
+                        <li><a class="nav-link scrollto {{ request()->is('welcome*') ? 'active' : '' }}" href="/">Accueil</a></li>
+                        <li><a class="nav-link scrollto {{ request()->is('about*') ? 'active' : '' }}" href="/about">À Propos</a></li>
                         <li class="dropdown"><a href="#" class=""><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li><a href="/code">Code</a></li>
@@ -46,9 +46,9 @@
                                 <li><a href="/network">Réseau</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link scrollto " href="/realisations">Réalisations</a></li>
-                        <li><a class="nav-link scrollto " href="/blog">Blog</a></li>
-                        <li><a class="nav-link scrollto " href="/contact">Contact</a></li>
+                        <li><a class="nav-link scrollto {{ request()->is('realisations*') ? 'active' : '' }}" href="/realisations">Réalisations</a></li>
+                        <li><a class="nav-link scrollto {{ request()->is('blog*') ? 'active' : '' }}" href="/blog">Blog</a></li>
+                        <li><a class="nav-link scrollto {{ request()->is('contact*') ? 'active' : '' }}" href="/contact">Contact</a></li>
                         <!-- <li><a class="getstarted scrollto" href="">Prendre rendez-vous</a></li> -->
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
