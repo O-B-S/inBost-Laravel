@@ -39,9 +39,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::middleware(['auth','isAdmin'])->group(function () {
    
    Route::get('/dashboard', [DashboardController::class, 'index']);
-   //Route::get('/dashboard', function (){
-   //   return view('admin.Dashboard');
-   //  });
-   
-     Route::get('/blog', [BlogCategoryController::class, 'index']);
+   Route::get('/blog', [BlogCategoryController::class, 'index']);
 });

@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class BlogCategoryController extends Controller
 {
     public function index(){
-        return "admin.blog.categories.index";
+        return view('admin.blog.categories.index');
     }
 }
