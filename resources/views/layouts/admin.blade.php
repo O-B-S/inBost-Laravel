@@ -30,6 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('admin/css/custom.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -296,7 +297,7 @@
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="/admin/blogs">
-              <i class="bi bi-circle"></i><span>Postes</span>
+              <i class="bi bi-circle"></i><span>Liste Categories</span>
             </a>
           </li>
           <li>
@@ -306,12 +307,12 @@
           </li>
           <li>
             <a href="add-post">
-              <i class="bi bi-circle"></i><span>Ajouter Postes</span>
+              <i class="bi bi-circle"></i><span>Postes</span>
             </a>
           </li>
           <li>
             <a href="components-breadcrumbs.html">
-              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+              <i class="bi bi-circle"></i><span>Ajouter Postes</span>
             </a>
           </li>
           <li>

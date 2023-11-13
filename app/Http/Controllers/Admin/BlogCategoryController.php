@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 class BlogCategoryController extends Controller
 {
     public function index(){
-        return view('admin.blog.categories.index');
+        $category = BlogCategory::all();
+        return view('admin.blog.categories.index', compact('category'));
     }
 
     public function add(){
