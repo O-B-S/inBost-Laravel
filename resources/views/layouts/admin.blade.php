@@ -295,18 +295,18 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/blog">
+            <a href="/admin/blogs">
               <i class="bi bi-circle"></i><span>Postes</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.html">
-              <i class="bi bi-circle"></i><span>Accordion</span>
+            <a href="add-category">
+              <i class="bi bi-circle"></i><span>Ajouter Categories</span>
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
-              <i class="bi bi-circle"></i><span>Badges</span>
+            <a href="add-post">
+              <i class="bi bi-circle"></i><span>Ajouter Postes</span>
             </a>
           </li>
           <li>

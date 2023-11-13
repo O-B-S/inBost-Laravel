@@ -9,7 +9,7 @@
       <h1>Blog</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Blog</a></li>
+          <li class="breadcrumb-item"><a href="/admin/blogs">Blog</a></li>
           <li class="breadcrumb-item active">Postes</li>
         </ol>
       </nav>
