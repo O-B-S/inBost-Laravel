@@ -46,6 +46,11 @@
                                 <li><a href="/network">Réseau</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown"><a href="#" class=""><span>Solutions</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="https://apps.elitesms.net">EliteSMS</a></li>
+                            </ul>
+                        </li>
                         <li><a class="nav-link scrollto {{ request()->is('realisations*') ? 'active' : '' }}" href="/realisations">Réalisations</a></li>
                         <li><a class="nav-link scrollto {{ request()->is('blog*') ? 'active' : '' }}" href="/blog">Blog</a></li>
                         <li><a class="nav-link scrollto {{ request()->is('contact*') ? 'active' : '' }}" href="/contact">Contact</a></li>

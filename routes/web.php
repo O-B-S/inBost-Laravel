@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogCategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Auth;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -36,7 +38,18 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth','isAdmin'])->group(function () {
-   Route::get('/dashboard', function (){
-    return view('admin.Dashboard');
-   });
+   
+   //Dashboard
+   Route::get('/dashboard', [DashboardController::class, 'index']);
+
+   //Blog category
+   Route::get('/admin/blogs', [BlogCategoryController::class, 'index']);
+   Route::get('/admin/add-category', [BlogCategoryController::class, 'add']);
+   Route::post('insert-category', [BlogCategoryController::class, 'insert']);
+   Route::get('edit-cat/{id}', [BlogCategoryController::class, 'edit']);
+   Route::put('update-category/{id}', [BlogCategoryController::class, 'update']);
+
+
+   //Blog posts
+   
 });
