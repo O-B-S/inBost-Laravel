@@ -37,15 +37,15 @@
                 <tbody>
                   @foreach ($category as $item)
                      <tr>
-                       <th scope="row">{{ $item-> id }}</th>
-                       <td class="col-sm-3">{{ $item-> name }}</td>
-                       <td>{{ $item-> description }}</td>
+                       <th scope="row">{{ $item->id }}</th>
+                       <td class="col-sm-3">{{ $item->name }}</td>
+                       <td>{{ $item->description }}</td>
                        <td>
                           <img src="{{ asset('assets/uploads/category/'.$item->image) }}" class="cate-image" alt="Image">
                         </td>
                        <td>
-                          <button class="btn btn-primary">Modifier</button>
-                          <button class="btn btn-danger">Supprimer</button>
+                          <a href="{{ url('edit-cat/'.$item->id)}}" class="btn btn-primary">Modifier</a>
+                          <a href="" class="btn btn-danger">Supprimer</a>
                        </td>
                      </tr>                      
                   @endforeach

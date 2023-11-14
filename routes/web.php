@@ -46,6 +46,8 @@ Route::middleware(['auth','isAdmin'])->group(function () {
    Route::get('/admin/blogs', [BlogCategoryController::class, 'index']);
    Route::get('/admin/add-category', [BlogCategoryController::class, 'add']);
    Route::post('insert-category', [BlogCategoryController::class, 'insert']);
+   Route::get('edit-cat/{id}', [BlogCategoryController::class, 'edit']);
+   Route::put('update-category/{id}', [BlogCategoryController::class, 'update']);
 
 
    //Blog posts

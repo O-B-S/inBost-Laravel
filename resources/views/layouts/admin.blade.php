@@ -49,7 +49,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="/dashboard" class="logo d-flex align-items-center">
         <img src="{{asset('admin/img/logo.png')}}" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="d-none d-lg-block">inBost</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -306,8 +306,8 @@
             </a>
           </li>
           <li>
-            <a href="add-post">
-              <i class="bi bi-circle"></i><span>Postes</span>
+            <a href="">
+              <i class="bi bi-circle"></i><span>Liste Postes</span>
             </a>
           </li>
           <li>
