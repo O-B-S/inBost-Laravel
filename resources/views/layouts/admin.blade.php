@@ -306,12 +306,12 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/admin/post">
               <i class="bi bi-circle"></i><span>Liste Postes</span>
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.html">
+            <a href="/admin/add-post">
               <i class="bi bi-circle"></i><span>Ajouter Postes</span>
             </a>
           </li>

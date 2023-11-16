@@ -4,8 +4,8 @@ use App\Http\Controllers\Admin\BlogCategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\PostController;
 use Illuminate\Support\Facades\Auth;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,5 +52,10 @@ Route::middleware(['auth','isAdmin'])->group(function () {
 
 
    //Blog posts
-   
+   Route::get('/admin/post', [PostController::class, 'index']);
+   Route::get('/admin/add-post', [PostController::class, 'add']);
+   Route::post('insert-post', [PostController::class, 'insert']);
+   Route::get('edit-post/{id}', [PostController::class, 'edit']);
+   Route::put('update-post/{id}', [PostController::class, 'update']);
+   Route::get('delete-post/{id}', [PostController::class, 'destroy']);
 });
