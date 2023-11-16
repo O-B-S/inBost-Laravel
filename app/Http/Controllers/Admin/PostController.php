@@ -36,4 +36,9 @@ class PostController extends Controller
         $post->save();
         return redirect('/admin/add-post')->with('status', 'poste ajoutée !');
     }
+
+    public function edit($id){
+        $post = Posts::find($id);
+        return view('admin.blog.posts.edit', compact('post'));
+    }
 }

@@ -28,6 +28,7 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Categories</th>
                     <th scope="col">Titre</th>
                     <th scope="col">Auteur</th>
                     <th scope="col">description</th>
@@ -39,6 +40,7 @@
                   @foreach ($post as $item)
                      <tr>
                        <th scope="row">{{ $item->id }}</th>
+                       <td class="col-sm-3">{{ $item->category->name }}</td>
                        <td class="col-sm-3">{{ $item->title }}</td>
                        <td class="col-sm-3">{{ $item->author }}</td>
                        <td class="col-sm-3">{{ $item->description }}</td>
@@ -46,8 +48,8 @@
                           <img src="{{ asset('assets/uploads/posts/'.$item->image) }}" class="cate-image" alt="Image">
                         </td>
                        <td>
-                          <a href="{{ url('edit-post/'.$item->id)}}" class="btn btn-primary">Modifier</a>
-                          <a href="{{ url('delete-post/'.$item->id)}}" class="btn btn-danger">Supprimer</a>
+                          <a href="{{ url('edit-post/'.$item->id)}}" class="btn btn-primary btn-sm">Modifier</a>
+                          <a href="{{ url('delete-post/'.$item->id)}}" class="btn btn-danger btn-sm">Supprimer</a>
                        </td>
                      </tr>                      
                   @endforeach

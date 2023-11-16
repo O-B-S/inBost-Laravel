@@ -16,4 +16,8 @@ class Posts extends Model
         'description',
         'image'
     ];
+
+    public function category(){
+        return $this->belongsTo(BlogCategory::class, 'cate_id', 'id');
+    }
 }
