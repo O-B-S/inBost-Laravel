@@ -283,14 +283,14 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link " href="/dashboard">
+      <li class="nav-item {{ request()->is('dashboard*') ? 'active' : '' }}">
+        <a class="nav-link" href="/admin/dashboard">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
-      <li class="nav-item">
+      <li class="nav-item {{ request()->is('dashboard*') ? 'active' : '' }}">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-file-post"></i><span>Blog</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -306,12 +306,12 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/admin/post">
               <i class="bi bi-circle"></i><span>Liste Postes</span>
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.html">
+            <a href="/admin/add-post">
               <i class="bi bi-circle"></i><span>Ajouter Postes</span>
             </a>
           </li>

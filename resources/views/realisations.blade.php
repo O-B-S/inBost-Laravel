@@ -21,7 +21,7 @@
 
             <header class="section-header">
                 <!-- <h2>Realisations</h2> -->
-                <p>Projets Accomplis</p>
+                <p>Projets Réalisés</p>
             </header>
 
             <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">

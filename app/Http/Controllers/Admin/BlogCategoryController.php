@@ -66,4 +66,18 @@ class BlogCategoryController extends Controller
         return redirect('/admin/blogs')->with('status', 'Categorie Modifiée !');
     }
 
+    public function destroy($id){
+        $category = BlogCategory::find($id);
+        if($category->image)
+        {
+            $path = 'assets/uploads/category/'.$category->image;
+            if(File::exists($path))
+            {
+                File::delete($path);
+            }
+        }
+        $category->delete();
+        return redirect('/admin/blogs')->with('status', 'Categorie Supprimée !');
+    }
+
 }

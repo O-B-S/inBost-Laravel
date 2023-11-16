@@ -141,7 +141,7 @@
 
         <header class="section-header">
           <h2>Realisations</h2>
-          <p>Projets Accomplis</p>
+          <p>Projets Réalisés</p>
         </header>
 
         <div class="row gy-4 portfolio-container aos-init" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 523.016px;">
@@ -226,7 +226,7 @@
 
         </div>
         <div class="about section-header mt-5">
-          <a href="realisation.php" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+          <a href="/realisations" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
             <span>Voir plus</span>
             <i class="bi bi-arrow-right"></i>
           </a>
