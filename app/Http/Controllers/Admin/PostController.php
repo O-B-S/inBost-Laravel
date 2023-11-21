@@ -33,6 +33,8 @@ class PostController extends Controller
         $post->cate_id = $request->input('cate_id');
         $post->title = $request->input('title');
         $post->author = $request->input('author');
+        $post->status = $request->input('status') == TRUE ? '1':'0';
+        $post->popular = $request->input('popular') == TRUE ? '1':'0';
         $post->description = $request->input('description');
         $post->save();
         return redirect('/admin/add-post')->with('status', 'poste ajouté !');
@@ -60,6 +62,8 @@ class PostController extends Controller
         }
         $post->title = $request->input('title');
         $post->author = $request->input('author');
+        $post->status = $request->input('status') == TRUE ? '1':'0';
+        $post->popular = $request->input('popular') == TRUE ? '1':'0';
         $post->description = $request->input('description');
         $post->update();
         return redirect('/admin/post')->with('status', 'poste Modifié !');

@@ -13,6 +13,8 @@ class Posts extends Model
         'cate_id',
         'title',
         'author',
+        'status',
+        'popular',
         'description',
         'image'
     ];

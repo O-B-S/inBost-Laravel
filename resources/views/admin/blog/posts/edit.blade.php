@@ -62,6 +62,24 @@
               </div>
 
               <div class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0"></legend>
+                <div class="col-sm-10">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="status">
+                    <label class="form-check-label" for="gridCheck1">
+                      Status
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked="" name="popular">
+                    <label class="form-check-label" for="gridCheck2">
+                      Popular
+                    </label>
+                  </div>
+
+              <div class="row mb-3">
                 <label class="col-sm-2 col-form-label"></label>
                 <div class="col-sm-10">
                   <button type="submit" class="btn btn-primary">Modifier</button>
