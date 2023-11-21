@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogCategoryController;
+use App\Http\Controllers\Frontend\BlogFrontendController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
@@ -29,6 +30,8 @@ Route::view('/realisations', 'realisations');
 Route::view('/blog', 'blog');
 Route::view('/contact', 'contact');
 
+//blog frontend
+Route::get('/blog', [BlogFrontendController::class, 'index']);
 
 Route::post('/contact.store', [ContactController::class, 'store']);
 

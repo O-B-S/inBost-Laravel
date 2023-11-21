@@ -16,6 +16,8 @@ return new class extends Migration
             $table->bigInteger("cate_id");
             $table->string("title");
             $table->string("author");
+            $table->string("status");
+            $table->string("popular");
             $table->longText("description");
             $table->string("image");
             $table->timestamps();
