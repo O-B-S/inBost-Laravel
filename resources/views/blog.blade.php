@@ -77,8 +77,10 @@
               <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
                 <ul>
-                  @foreach ($featured_post as $category)
-                     <li><a href="#">{{$category->category->name}} <span>(25)</span></a></li>
+                  @foreach ($featured_post2 as $category)
+                    @if (($category->name))
+                     <li><a href="#">{{ $category->name }} <span>(25)</span></a></li>
+                    @endif
                   @endforeach
                 </ul>
               </div><!-- End sidebar categories-->

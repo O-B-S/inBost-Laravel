@@ -18,4 +18,9 @@ class BlogCategory extends Model
         'popular',
         'image',
     ];
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
