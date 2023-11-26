@@ -14,4 +14,13 @@ class BlogFrontendController extends Controller
         $most_recent = Posts::latest()->take(5)->get();
         return view('/blog', compact('featured_post', 'featured_post2', 'most_recent'));
     }
+
+    public function viewcategory($id){
+        if (BlogCategory::where('id', $id)->exists()) {
+
+            $category = BlogCategory::where('id', $id)->first();
+            $post = Posts::where('cate_id', $category->id)->where('status', '0')->get();
+            return view('/frontend/category', compact('category', 'post'));
+        }
+    }
 }

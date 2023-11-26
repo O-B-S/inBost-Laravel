@@ -74,12 +74,14 @@
                 </form>
               </div><!-- End sidebar search formn-->
 
-              <h3 class="sidebar-title">Categories</h3>
+              <a href="view-category">
+                <h3 class="sidebar-title">Categories</h3>
+              </a>  
               <div class="sidebar-item categories">
                 <ul>
                   @foreach ($featured_post2 as $category)
                     @if (($category->name))
-                     <li><a href="#">{{ $category->name }} <span>(25)</span></a></li>
+                     <li><a href="#">{{ $category->name }}</a></li>
                     @endif
                   @endforeach
                 </ul>
