@@ -74,14 +74,14 @@
                 </form>
               </div><!-- End sidebar search formn-->
 
-              <a href="view-category">
+              
                 <h3 class="sidebar-title">Categories</h3>
-              </a>  
+                
               <div class="sidebar-item categories">
                 <ul>
                   @foreach ($featured_post2 as $category)
                     @if (($category->name))
-                     <li><a href="#">{{ $category->name }}</a></li>
+                     <li><a href="{{url('view-category/'.$category->id)}}">{{ $category->name }}</a></li>
                     @endif
                   @endforeach
                 </ul>

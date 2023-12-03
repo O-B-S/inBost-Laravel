@@ -19,8 +19,11 @@ class BlogFrontendController extends Controller
         if (BlogCategory::where('id', $id)->exists()) {
 
             $category = BlogCategory::where('id', $id)->first();
-            $post = Posts::where('cate_id', $category->id)->where('status', '0')->get();
-            return view('/frontend/category', compact('category', 'post'));
+            $post = Posts::where('cate_id', $category->id)->where('status', '1')->get();
+            return view('frontend.category', compact('category', 'post'));
+        }
+        else {
+            return redirect('/')->with('status', "cette categorie n'existe pas" );
         }
     }
 }
