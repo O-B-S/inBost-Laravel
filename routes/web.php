@@ -33,6 +33,7 @@ Route::view('/contact', 'contact');
 //blog frontend
 Route::get('/blog', [BlogFrontendController::class, 'index']);
 Route::get('view-category/{id}', [BlogFrontendController::class, 'viewcategory']);
+Route::get('view-category/{category_name}/{post_name}', [BlogFrontendController::class, 'viewpost']);
 
 Route::post('/contact.store', [ContactController::class, 'store']);
 
