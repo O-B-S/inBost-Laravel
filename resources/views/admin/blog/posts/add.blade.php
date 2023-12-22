@@ -43,7 +43,7 @@
               <div class="row mb-3">
                 <label for="inputText" class="col-sm-2 col-form-label">Auteur</label>
                 <div class="col-sm-10">
-                  <input type="text" name="author" class="form-control">
+                  <input type="text" name="author" value="{{Auth::user()->name}}" class="form-control">
                 </div>
               </div>
               <div class="row mb-3">
