@@ -45,7 +45,7 @@
                     {{$post->description}}
                    </p>
                    <div class="read-more">
-                     <a href="blog-single.php">Lire la suite</a>
+                     <a href="{{url('view-post/'.$post->title)}}">Lire la suite</a>
                    </div>
                  </div>
 
@@ -54,8 +54,8 @@
 
             <div class="blog-pagination">
               <ul class="justify-content-center">
-                <li><a href="#">1</a></li>
-                <li class="active"><a href="#">2</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
               </ul>
             </div>
