@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('title', 'InBost - Category posts')
+@section('title', 'InBost - ' .$category->name)
 
 @section('content')
 <section class="breadcrumbs">
@@ -9,7 +9,7 @@
       <ol>
         <li><a href="/">Accueil</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li>Categorie {{$category->name}}</li>
+        <li>{{$category->name}}</li>
       </ol>
 
     </div>
@@ -31,7 +31,7 @@
             <div class="post-img"><img src="{{asset('assets/uploads/posts/'.$post->image)}}" class="img-fluid" alt=""></div>
             <span class="post-date">{{$post->created_at}}</span>
             <h3 class="post-title">{{ $post->title }}</h3>
-            <a href="#" class="readmore stretched-link mt-auto"><span>Lire la suite</span><i class="bi bi-arrow-right"></i></a>
+            <a href="{{url('view-category/'.$category->name.'/'.$post->title)}}" class="readmore stretched-link mt-auto"><span>Lire la suite</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
        @endforeach

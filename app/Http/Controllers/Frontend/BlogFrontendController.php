@@ -26,4 +26,34 @@ class BlogFrontendController extends Controller
             return redirect('/')->with('status', "cette categorie n'existe pas" );
         }
     }
+
+    public function viewpost($category_name, $post_title) {
+        if (BlogCategory::where('name', $category_name)->exists()) {
+            if (Posts::where('title', $post_title)->exists()) {
+                $post = Posts::where('title', $post_title)->first();
+                $featured_post2 = BlogCategory::where('popular', '1')->get();
+                $most_recent = Posts::latest()->take(5)->get();
+                return view('frontend.viewpost', compact('post', 'featured_post2', 'most_recent'));
+            }
+            else{
+                return redirect('/')->with('status', 'le lien à été rompu');
+            }
+        }
+        else {
+            return redirect('/')->with('status', "cette categorie n'existe pas");
+        }
+    }
+
+    public function viewPostsdetails($post_title){
+        
+            if (Posts::where('title', $post_title)->exists()) {
+                $post = Posts::where('title', $post_title)->first();
+                $featured_post2 = BlogCategory::where('popular', '1')->get();
+                $most_recent = Posts::latest()->take(5)->get();
+                return view('frontend.viewpost', compact('post', 'featured_post2', 'most_recent'));
+            }
+            else{
+                return redirect('/')->with('status', 'le lien à été rompu');
+            }
+    }
 }
