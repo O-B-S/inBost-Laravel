@@ -32,7 +32,7 @@ Route::view('/contact', 'contact');
 
 //blog frontend
 Route::get('/blog', [BlogFrontendController::class, 'index']);
-Route::get('view-category/{id}', [BlogFrontendController::class, 'viewcategory']);
+Route::get('view-category/{name}', [BlogFrontendController::class, 'viewcategory']);
 Route::get('view-category/{category_name}/{post_title}', [BlogFrontendController::class, 'viewpost']);
 Route::get('view-post/{post_title}',[BlogFrontendController::class, 'viewPostsdetails'] );
 
