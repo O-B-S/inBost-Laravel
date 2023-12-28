@@ -81,7 +81,7 @@
                 <ul>
                   @foreach ($featured_post2 as $category)
                     @if (($category->name))
-                     <li><a href="{{url('view-category/'.$category->id)}}">{{ $category->name }}</a></li>
+                     <li><a href="{{url('view-category/'.$category->name)}}">{{ $category->name }}</a></li>
                     @endif
                   @endforeach
                 </ul>
